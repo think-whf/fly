@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+</head>
+<body>
+	<canvas width=600 height=600></canvas>
+	<script>
+		var can = document.querySelector("canvas");
+		var context = can.getContext("2d");
+		var img = new Image();
+		img.onload = function(){
+			context.drawImage(img,50,50,150,150,0,0,200,200);
+		};
+		img.src = "cuboid.bmp";
+	</script>
+</body>
+</html>

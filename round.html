@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+	<style>
+		body{background-color: #ccc;}
+	</style>
+</head>
+<body>
+	<canvas width=600 height=600></canvas>
+	<script>
+		var can = document.querySelector("canvas");
+		var context = can.getContext("2d");
+
+		context.beginPath();
+		context.fillStyle="#ff0000";
+		context.arc(150,150,60,0,Math.PI/2,false);
+		context.fill();
+		context.closePath();
+
+		context.beginPath();
+		context.arc(150,150,60,Math.PI/2,Math.PI,false);
+		context.fill();
+		context.closePath();
+
+		context.beginPath();
+		context.arc(150,150,60,Math.PI,Math.PI/2*3,false);
+		context.fill();
+		context.closePath();
+
+		context.beginPath();
+		context.arc(150,150,60,Math.PI/2*3,0,false);
+		context.fill();
+		context.closePath();
+	</script>
+</body>
+</html>

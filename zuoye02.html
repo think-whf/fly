@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+</head>
+<body>
+	<canvas width=360 height=500></canvas>
+	<script>
+		var can = document.querySelector("canvas");
+		var context = can.getContext("2d");
+
+		//第一个
+		context.beginPath();
+		context.strokeStyle="#0000ff";
+		context.lineWidth=2;
+		context.arc(76,83,42,Math.PI/18*11,0,false);
+		context.stroke();
+		context.closePath();
+
+		//第二个
+		context.beginPath();
+		context.strokeStyle="#0000ff";
+		context.lineWidth=2;
+		context.arc(178,80,42,0,Math.PI*5/4,false);
+		context.stroke();
+		context.closePath();
+
+		//第三个
+		context.beginPath();
+		context.strokeStyle="#0000ff";
+		context.lineWidth=2;
+		context.arc(276,80,42,0,Math.PI*2,false);
+		context.stroke();
+		context.closePath();
+
+		//第四个
+		context.beginPath();
+		context.fillStyle="#ff0000";
+		context.lineWidth=2;
+		context.arc(77,180,42,0,Math.PI/18*11,false);
+		context.fill();
+		context.closePath();
+
+		//第五个
+		context.beginPath();
+		context.fillStyle="#ff0000";
+		context.lineWidth=2;
+		context.arc(178,180,42,0,-Math.PI*2/3,true);
+		context.fill();
+		context.closePath();
+
+		//第六个
+		context.beginPath();
+		context.fillStyle="#ff0000";
+		context.lineWidth=2;
+		context.arc(276,180,42,0,Math.PI*2,false);
+		context.fill();
+		context.closePath();
+
+			//第七个
+		context.beginPath();
+		context.strokeStyle="#0000ff";
+		context.lineWidth=2;
+		context.arc(76,284,42,Math.PI/18*11,0,false);
+		context.stroke();
+		context.closePath();
+
+		//第八个
+		context.beginPath();
+		context.strokeStyle="#0000ff";
+		context.lineWidth=2;
+		context.arc(178,284,42,0,Math.PI*5/4,false);
+		context.stroke();
+		context.closePath();
+
+		//第九个
+		context.beginPath();
+		context.strokeStyle="#0000ff";
+		context.lineWidth=2;
+		context.arc(276,284,42,0,Math.PI*2,false);
+		context.stroke();
+		context.closePath();
+
+		//第十个
+		context.beginPath();
+		context.fillStyle="#ff0000";
+		context.lineWidth=2;
+		context.arc(77,384,42,0,Math.PI/18*11,false);
+		context.fill();
+		context.closePath();
+
+		//第十一个
+		context.beginPath();
+		context.fillStyle="#ff0000";
+		context.lineWidth=2;
+		context.arc(178,384,42,0,-Math.PI*2/3,true);
+		context.fill();
+		context.closePath();
+
+		//第十二个
+		context.beginPath();
+		context.fillStyle="#ff0000";
+		context.lineWidth=2;
+		context.arc(276,384,42,0,Math.PI*2,false);
+		context.fill();
+		context.closePath();
+	</script>
+</body>
+</html>

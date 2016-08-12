@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+	<style>
+		body{background-color: #ccc;}
+	</style>
+</head>
+<body>
+	<canvas width=600 height=600></canvas>
+	<script>
+		var can = document.querySelector("canvas");
+		var context = can.getContext("2d");
+
+		context.beginPath();
+		context.strokeStyle="#ff0000";
+		context.rotate(Math.PI/36);
+		context.strokeRect(20,20,60,60);
+		context.scale(2,2);
+		context.strokeRect(20,20,60,60);
+		context.scale(2,2);
+		
+		context.strokeRect(20,20,60,60);
+		context.closePath();
+
+	</script>
+</body>
+</html>

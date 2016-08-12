@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+</head>
+<body>
+	<canvas width=360 height=240></canvas>
+	<script>
+		var can = document.querySelector("canvas");
+		var context = can.getContext("2d");
+
+		//第一个
+		context.beginPath();
+		context.strokeStyle = "green";
+		context.fillStyle = "#fcb2b4";
+		context.moveTo(70,19);
+		context.lineTo(109,47);
+		context.lineTo(93,93);
+		context.lineTo(46,93);
+		context.lineTo(31,47);
+		context.lineTo(70,19);
+		context.stroke();
+		context.fill();
+		context.closePath();
+
+		//第二个
+		context.beginPath();
+		context.strokeStyle = "green";
+		context.fillStyle = "#fcb2b4";
+		context.moveTo(170,19);
+		context.lineTo(204,80);
+		context.lineTo(135,80);
+		context.lineTo(170,19);
+		context.stroke();
+		context.fill();
+		context.closePath();
+
+			//第三个
+		context.beginPath();
+		context.strokeStyle = "green";
+		context.fillStyle = "#fcb2b4";
+		context.moveTo(269,19);
+		context.lineTo(301,35);
+		context.lineTo(309,67);
+		context.lineTo(286,94);
+		context.lineTo(254,94);
+		context.lineTo(230,70);
+		context.lineTo(238,35);
+		context.lineTo(269,19);
+		context.stroke();
+		context.fill();
+		context.closePath();
+
+		//第四个
+		context.beginPath();
+		context.strokeStyle = "green";
+		context.fillStyle = "#fcb2b4";
+		context.moveTo(70,119);
+		context.lineTo(84,123);
+		context.lineTo(100,132);
+		context.lineTo(108,146);
+		context.lineTo(109,167);
+		context.lineTo(100,183);
+		context.lineTo(79,198);
+		context.lineTo(60,200);
+		context.lineTo(45,190);
+		context.lineTo(39,183);
+		context.lineTo(30,164);
+		context.lineTo(32,152);
+		context.lineTo(40,132);
+		context.lineTo(52,122);
+		context.lineTo(70,119);
+		context.stroke();
+		context.fill();
+		context.closePath();
+
+		//第五个
+		context.beginPath();
+		context.strokeStyle = "green";
+		context.fillStyle = "#fcb2b4";
+		context.moveTo(170,120);
+		context.lineTo(210,160);
+		context.lineTo(170,198);
+		context.lineTo(130,160);
+		context.lineTo(170,120);
+		context.stroke();
+		context.fill();
+		context.closePath();
+	</script>
+</body>
+</html>

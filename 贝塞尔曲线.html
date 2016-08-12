@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+</head>
+<body>
+	<canvas width=600 height=600></canvas>
+	<script>
+		var can = document.querySelector("canvas");
+		var context = can.getContext("2d");
+
+		context.beginPath();
+		context.strokeStyle = "red";
+		context.moveTo(10,50);
+
+		 context.bezierCurveTo(60,80,150,30,170,150); 
+		 context.stroke();
+		context.closePath();
+	</script>
+</body>
+</html>

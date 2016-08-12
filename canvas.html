@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+	<style>
+		body{background: #ccc;}
+	</style>
+</head>
+<body>
+	<canvas width=600 height=600></canvas>
+	<script>
+		var can = document.querySelector("canvas");
+		var context = can.getContext("2d");
+		//TOP第一个矩形
+		context.beginPath();
+		context.fillStyle="#ff0000";
+		context.fillRect(10,10,100,100);
+		context.fill();
+		context.closePath();
+		//TOP第二个矩形
+		context.beginPath();
+		context.strokeStyle = "#000";
+		context.lineWidth = 10;
+		context.strokeRect(120,10,100,100);		
+		context.stroke();
+		context.closePath();
+		//TOP第三个矩形
+		context.beginPath();
+		context.fillStyle="pick";
+		context.fillRect(230,10,100,100);
+		context.fill();
+		context.closePath();
+		//bottom第一个矩形
+		context.beginPath();
+		context.fillStyle="#ff0000";
+		context.fillRect(10,120,100,100);
+		context.fill();
+		context.closePath();
+		//bottom第二个矩形
+		context.beginPath();
+		context.strokeStyle = "blue";
+		context.lineWidth = 5;
+		context.strokeRect(120,120,100,100);		
+		context.stroke();
+		context.closePath();
+		//清除中间块
+		context.beginPath();		
+		context.clearRect(60,60,220,110);		
+		context.closePath();
+		//绘制上面的小矩形
+		context.beginPath();
+		context.fillStyle="blue";
+		context.fillRect(70,70,40,40);
+		context.fill();
+		context.closePath();
+
+
+	</script>
+</body>
+</html>

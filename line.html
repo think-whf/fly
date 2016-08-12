@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+	<style>
+		*{margin:0;padding: 0;}
+		body,html{width: 100%;}
+		canvas{margin:40px;}
+	</style>
+</head>
+<body>
+	<canvas width=600 height=600></canvas>
+	<script>
+		var can = document.querySelector("canvas");
+		var context = can.getContext("2d");
+
+		context.beginPath();
+		context.strokeStyle = "red";
+		context.fillStyle = "#ccc";
+		context.moveTo(0,0);
+		context.lineTo(200,0);
+		context.lineTo(200,100);
+		context.lineTo(150,100);
+		context.lineTo(150,300);
+		context.lineTo(50,300);
+		context.lineTo(50,100);
+		context.lineTo(0,100);
+		context.lineTo(0,0);
+		context.stroke();
+		context.fill();
+		context.closePath();
+
+
+		function draw(){
+			context.beginPath();
+		}
+
+		//context.globalCompositeOperation = "source-out";
+
+		
+		
+
+	</script>
+</body>
+</html>

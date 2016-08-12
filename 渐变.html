@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+</head>
+<body>
+	<canvas width=600 height=600></canvas>
+	<script>
+		var can = document.querySelector("canvas");
+		var context = can.getContext("2d");
+
+		var lg = context.createLinearGradient(0,0,can.width/3,can.height/3);
+		lg.addColorStop(0,"red");
+		lg.addColorStop(0.5,"pink");
+		lg.addColorStop(1,"yellow");
+
+		context.beginPath();
+		context.fillStyle = lg;
+		context.rect(0,0,can.width/3,can.height/3);
+		context.fill();
+		context.closePath();
+
+		lg = context.createLinearGradient(300,300,500,500);
+		lg.addColorStop(0,"red");
+		lg.addColorStop(0.5,"pink");
+		lg.addColorStop(1,"yellow");
+
+		context.beginPath();
+		context.strokeStyle = lg;
+		context.lineWidth=20;
+		context.rect(300,300,can.width/3,can.height/3);
+		context.stroke();
+		context.closePath();
+
+	</script>
+</body>
+</html>
